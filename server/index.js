@@ -16,7 +16,7 @@ const lorem = new LoremIpsum({
 });
 
 const app = express();
-const port = 3000;
+const port = 8080;
 const editor = ServerBlockNoteEditor.create();
 
 app.get('/', async (req, res) => {

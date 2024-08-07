@@ -15,7 +15,7 @@ export default function App() {
   const { data: initialContentsUpdateVector, refetch } = useQuery({
     queryKey: [1],
     queryFn: async () =>
-      fetch('http://localhost:3000/')
+      fetch('http://localhost:8080/')
         .then((res) => res.text())
         .then((res) => toUint8Array(res)), // API returns initial doc as a yjs update encoded as base64
   });
